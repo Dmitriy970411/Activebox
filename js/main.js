@@ -23,7 +23,6 @@ $(function() {
    var scrollOffset = $(window).scrollTop();
    let nav = $("#nav");
    let navToggle = $("#navToggle");
-   let burger = $("#burger");
 
    checkScroll(scrollOffset);
 
@@ -51,7 +50,6 @@ $("[data-scroll]").on("click", function(event) {
 
       nav.removeClass("show");
       $("body").removeClass("modal-open");
-      burger.removeClass("nav-drop");
       navToggle.removeClass("nav-active");
 
 
@@ -67,8 +65,6 @@ $("[data-scroll]").on("click", function(event) {
 
         $(this).toggleClass("nav-active");
         nav.toggleClass("show");
-        $('body').toggleClass('modal-open');
-        burger.toggleClass("nav-drop");
 
   });
 

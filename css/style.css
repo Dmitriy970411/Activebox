@@ -118,6 +118,10 @@ span {
    width: 189px;
 }
 
+#burger {
+   width: 100%;
+}
+
 .top-nav {
    width: 100%;
    display: flex;
@@ -151,7 +155,7 @@ span {
    z-index: 9999;
    display: none;
    right: 0;
-   top: 50%;
+   top: 47px;
    transform: translateY(-50%);
 }
 
@@ -580,6 +584,10 @@ blockquote p .single-item {
       font-size: 18px;
    }
 
+   .main-nav {
+      background-color: #292E4C;
+   }
+
    .top-nav {
       display: none;
    }
@@ -615,27 +623,15 @@ blockquote p .single-item {
    }
 
    .nav-drop {
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 999;
-      color: #fff;
-      background-color: #2A2F4C;
-   }
-
-   .nav-drop {
       transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
   }
 
    .show {
-  height: 100%;
    display: flex;
    flex-direction: column;
    text-align: center; 
    justify-content: center;
+   padding-top: 40px
  
    }
     .header-content .top-nav li {
